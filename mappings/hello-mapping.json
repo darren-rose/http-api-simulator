@@ -1,0 +1,13 @@
+{
+  "request" : {
+    "url" : "/hello",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "hello-body.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  }
+}
