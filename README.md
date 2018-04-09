@@ -11,3 +11,5 @@
 ```  
 ./gradlew verify
 ```
+
+powered by [http://wiremock.org/](http://wiremock.org/)
