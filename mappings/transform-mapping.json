@@ -1,0 +1,12 @@
+{
+  "request" : {
+    "url" : "/transform",
+    "method" : "GET"
+  },
+  "response" : {
+    "transformerParameters" : {
+      "someValue" : 123
+    },
+    "transformers" : ["example-transformer"]
+  }
+}
