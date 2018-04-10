@@ -15,8 +15,12 @@ public class ExampleTransformer extends ResponseDefinitionTransformer {
         return new ResponseDefinitionBuilder()
                 .withHeader("Any-Header", "Transformed Header")
                 .withStatus(201)
-                .withBody("Transformed Body " + value)
+                .withBody(someMethod(value))
                 .build();
+    }
+
+    private String someMethod(int value) {
+        return new StringBuilder("Transformed using parameter: ").append(value).toString();
     }
 
     @Override
