@@ -19,7 +19,7 @@ task go(type: JavaExec){
     classpath = sourceSets.main.runtimeClasspath
     main = 'com.github.tomakehurst.wiremock.standalone.WireMockServerRunner'
 
-    args "--port", "${port}", "--record-mappings"
+    args "--port", "${port}", "--record-mappings", "--extensions", "simulator.ExampleTransformer"
 }
 
 task verify(type: Exec){
