@@ -12,7 +12,7 @@ dependencies {
 
 def port = 9999
 
-task go(type: JavaExec){
+task go(type: JavaExec, dependsOn: compileJava) {
     group 'dtc'
     description 'run simulator'
 
